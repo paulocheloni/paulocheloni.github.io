@@ -39,6 +39,20 @@ li{
 
 a{
     text-decoration: none;
+    
+}
+
+a.Trybe{
+    color: darkgreen;
+}
+
+.Udemy{
+    color: darkred;
+}
+
+.important{
+    font-weight: bolder;
+    display: inline;
 }
 
 #pic_paulo{
@@ -48,4 +62,6 @@ a{
 #Qualidades{
    
 }
+
+
 
