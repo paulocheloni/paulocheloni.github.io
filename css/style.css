@@ -8,8 +8,9 @@ body{
     margin:10px;
     display:grid;
     grid-template-areas: "header header header"
-                          "aside main aside"
+                          "asideleft main asideright"
                           "footer footer footer";
+    background: #ccc;;
     
 
 }
@@ -17,7 +18,29 @@ body{
 header{
     width: 100%;
     background-image: url(../imgs/background-header.jpeg);
-    
+    grid-area: header;
+}
+
+main,aside{
+    background: #fff;
+    padding-left: 5px;
+}
+
+main{
+    grid-area: main;
+}
+
+aside#left{
+    grid-area: asideleft;
+
+}
+
+aside#right{
+    grid-area: asideright;
+}
+
+footer{
+    grid-area: footer;
 }
 
 
@@ -26,7 +49,7 @@ h1{
 
 }
 
-h3{
+aside.left h3{
     margin-top: 50px;
 }
 
@@ -55,12 +78,23 @@ a.Trybe{
     display: inline;
 }
 
-#pic_paulo{
+.main_picture{
     opacity: 0.85;
 }
 
-#Qualidades{
+.Qualidades{
    
+}
+
+.resume{
+    font-size:14px;    
+}
+
+.video{
+    display: grid;
+    grid-row: 1fr;
+    grid-row-gap: 10px;
+
 }
 
 
